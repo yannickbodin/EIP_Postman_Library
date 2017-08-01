@@ -1,0 +1,59 @@
+{
+	"id": "10604e37-499e-15e4-1053-b06e13874bf7",
+	"name": "EIP_Postman_Library_v20170801",
+	"description": "",
+	"order": [
+		"c958025e-b05d-e574-fddf-2a72add45d37"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1501597266288,
+	"owner": "1219959",
+	"public": false,
+	"requests": [
+		{
+			"id": "c958025e-b05d-e574-fddf-2a72add45d37",
+			"headers": "X-IPM-Username: {{Username}}\nX-IPM-Password: {{Password}}\n",
+			"headerData": [
+				{
+					"key": "X-IPM-Username",
+					"value": "{{Username}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-IPM-Password",
+					"value": "{{Password}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://{{URL}}/rpc/ip_site_list?WHERE=site_name%20LIKE%20%27Project%25%27",
+			"queryParams": [
+				{
+					"key": "WHERE",
+					"value": "site_name%20LIKE%20%27Project%25%27",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "10604e37-499e-15e4-1053-b06e13874bf7",
+			"data": [],
+			"dataMode": "params",
+			"name": "Space list with condtion",
+			"description": "To list the existing spaces where name is st with the string  Project'",
+			"descriptionFormat": "html",
+			"time": 1501597273888,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
