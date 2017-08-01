@@ -3,7 +3,8 @@
 	"name": "EIP_Postman_Library_v20170801",
 	"description": "",
 	"order": [
-		"c958025e-b05d-e574-fddf-2a72add45d37"
+		"c958025e-b05d-e574-fddf-2a72add45d37",
+		"628daf0c-8979-9f80-d6a5-2ca742e7c526"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -11,6 +12,50 @@
 	"owner": "1219959",
 	"public": false,
 	"requests": [
+		{
+			"id": "628daf0c-8979-9f80-d6a5-2ca742e7c526",
+			"headers": "X-IPM-Username: {{Username}}\nX-IPM-Password: {{Password}}\n",
+			"headerData": [
+				{
+					"key": "X-IPM-Username",
+					"value": "{{Username}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-IPM-Password",
+					"value": "{{Password}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://{{URL}}/rpc/ip_block_subnet_list?WHERE=site_name%3D%27Project0%27%20AND%20is_terminal%3D%270%27",
+			"queryParams": [
+				{
+					"key": "WHERE",
+					"value": "site_name%3D%27Project0%27%20AND%20is_terminal%3D%270%27",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "10604e37-499e-15e4-1053-b06e13874bf7",
+			"data": [],
+			"dataMode": "params",
+			"name": "Non terminal network list inside a space",
+			"description": "List the not terminal network list from one space\n\n",
+			"descriptionFormat": "html",
+			"time": 1501598174528,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
 		{
 			"id": "c958025e-b05d-e574-fddf-2a72add45d37",
 			"headers": "X-IPM-Username: {{Username}}\nX-IPM-Password: {{Password}}\n",
